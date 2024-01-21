@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav-main {
+  display: flex;
+}
+
+.logo a img {
+  width: 200px;
+  padding-top: 16px;
+
+}
+.menu {
+  width: 100%;
+  text-align: right;
+}
+.menu ul li {
+  display: inline-block;
+  padding-left: 26px;
+}
+.menu ul li a {
+  line-height: 85px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: all linear 0.3s;
+  position: relative;
+}
+.menu ul li .active {
+  color: #7805a2
+}
+.menu ul li .active:hover {
+  color: #E72159;
+  transition: all linear 0.3s;
+}
+.menu ul li a:hover {
+  color: #E72159;
+  transition: all linear 0.3s;
+}
+
+.banner-img {
+  position: relative;
+  background: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(231, 33, 89, 0.506),
+    rgba(120, 5, 162, 0.412)
+  );
+  display: flex;
+  justify-content: center;
+}
+.banner-text {
+  text-align: center;
+  align-self: center;
+}
+.banner-text h3 {
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  color: #fff;
+  text-transform: capitalize;
+  padding-bottom: 58px;
+  position: relative;
+}
+.banner-text h3::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #E72159;
+  bottom: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.banner-text p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  padding: 0 92px;
+  padding-bottom: 55px;
+}
+.banner-text a {
+  border: 1px solid #E72159;
+  padding: 12px 30px;
+  font-family: "Hammersmith One", sans-serif;
+  color: #fff;
+  background-color: rgba(120, 5, 162, 0.815);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.banner-text a:hover {
+  color: #fff;
+  border: 2px solid rgba(120, 5, 162, 0.815);
+  background-color: #E72159;
+  border-radius: 15px;
+  transition: all linear 0.3s;
+
+}
